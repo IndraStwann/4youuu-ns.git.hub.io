@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Jost:ital,wght@0,400;0,500;1,400&family=Kanit:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(#2b1055, #7597de);
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+section img#bulan {
+  mix-blend-mode: screen;
+}
+
+section img#bintang {
+  height: 100%;
+  object-fit: cover;
+}
+
+section img#gunung {
+  bottom: 0;
+  object-fit: contain;
+  top: initial;
+}
+
+section img#tebing {
+  bottom: 0;
+  top: initial;
+  z-index: 10;
+  object-fit: contain;
+}
+
+.container {
+  position: absolute;
+  top: 120px;
+  width: 550px;
+  max-width: 100%;
+  height: 350px;
+  background: rgba(15, 12, 12, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3), 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  backdrop-filter: blur(6px);
+  z-index: 99;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background-color: #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.userimg {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgtx {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgtx h4 {
+  font-weight: 550;
+  line-height: 0.9em;
+  margin-left: 10px;
+  font-size: 0.95em;
+}
+
+.imgtx h4 span {
+  font-size: 0.6em;
+  color: #555;
+}
+
+.chatbox {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 90px);
+  padding: 25px;
+  overflow-y: auto;
+}
+
+.pesan {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 2px 0;
+}
+.pesan p {
+  position: relative;
+  right: 0px;
+  text-align: right;
+  max-width: 65%;
+  padding: 10px;
+  background: #dcf8c6;
+  border-radius: 10px;
+  font-size: 0.8em;
+  line-height: 15px;
+}
+
+.pesan p span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+
+.pesan_ku {
+  justify-content: flex-end;
+}
+
+.pesan_ku button {
+  border: none;
+  background-color: #dcf8c6;
+}
+
+.pesan_dia {
+  justify-content: flex-start;
+}
+
+.pesan_dia p {
+  background: #fff;
+  text-align: left;
+}
+
+.pesan_1,
+.pesan_2,
+.pesan_3,
+.pesan_4,
+.pesan_5,
+.pesan_6,
+.pesan_7,
+.pesan_8,
+.pesan_9,
+.pesan_10,
+.pesan_11,
+.pesan_12,
+.pesan_13,
+.pesan_14,
+.pesan_15,
+.pesan_16,
+.pesan_17,
+.pesan_18,
+.pesan_19,
+.pesan_20,
+.pesan_21,
+.pesan_22,
+.pesan_23,
+.pesan_24,
+.pesan_25,
+.pesan_26,
+.pesan_27,
+.pesan_28,
+.pesan_29,
+.pesan_30,
+.pesan_31,
+.pesan_32,
+.pesan_33,
+.pesan_34,
+.pesan_35,
+.pesan_36,
+.pesan_37,
+.pesan_38,
+.pesan_39,
+.pesan_40,
+.pesan_41,
+.pesan_42,
+.pesan_43,
+.pesan_44,
+.pesan_45,
+.pesan_46,
+.pesan_100 {
+  display: none;
+}
+
+/* style chat box  */
+/* style chat box  */
+.chatbox_input {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 45px;
+  bottom: 0;
+  background: #f0f0f0;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbox_input .icon {
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.chatbox_input input {
+  width: 90%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin: 0 12px;
+  border-radius: 15px;
+}
+
+/* css typing text */
+/* css typing text */
+.wrapper {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  background: #2b1055;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3), 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.wrapper .statis {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .bergerak {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.bergerak li {
+  list-style: none;
+  color: #fc6d6d;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+
+  animation: slide 12s steps(4);
+  animation-iteration-count: 100;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.bergerak li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 80px;
+}
+
+.bergerak li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #2b1055;
+  border-left: 2px solid #fc6d6d;
+  animation: typing 3s steps(10);
+  animation-iteration-count: 500;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 20px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrapper {
+    top: 60px;
+  }
+  .wrapper .statis {
+    font-size: 35px;
+    font-weight: 400;
+  }
+  .bergerak li span::after {
+    top: 2px;
+  }
+  .bergerak li {
+    font-size: 35px;
+    font-weight: 500;
+  }
+
+  .container {
+    width: 350px;
+    height: 600px;
+    top: 190px;
+  }
+
+  #bulan {
+    scale: 3.5;
+    transform: translateY(110px);
+  }
+
+  #gunung {
+    scale: 4;
+    transform: translateY(-76px);
+  }
+
+  #tebing {
+    transform: translateY(-76px);
+    scale: 3;
+  }
+}
