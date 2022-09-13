@@ -321,7 +321,7 @@ section img#tebing {
 
 @media (max-width: 550px) {
   .wrapper {
-    top: 60px;
+    top: 30px;
   }
   .wrapper .statis {
     font-size: 35px;
@@ -336,9 +336,9 @@ section img#tebing {
   }
 
   .container {
-    width: 350px;
-    height: 600px;
-    top: 190px;
+    width: 325px;
+    height: 525px;
+    top: 150px;
   }
 
   #bulan {
