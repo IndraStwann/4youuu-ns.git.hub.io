@@ -309,6 +309,28 @@ section img#tebing {
   animation-iteration-count: 500;
 }
 
+.containerlogin {
+  width: 500px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  filter: blur(1);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+
+.nxxt {
+  margin: 10px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: not-allowed;
+}
+
 @keyframes typing {
   40%,
   60% {
@@ -354,5 +376,14 @@ section img#tebing {
   #tebing {
     transform: translateY(-76px);
     scale: 3;
+  }
+  .containerlogin {
+    width: 300px;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 10px;
   }
 }
